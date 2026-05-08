@@ -11,7 +11,7 @@ No accounts. No telemetry. No surprise network calls. Just a small latch for noi
 ```bash
 npm install
 npm run build
-node dist/cli.js scan examples/failing-test.log --out triage.md --fail-on none
+node dist/src/cli.js scan examples/failing-test.log --out triage.md --fail-on none
 ```
 
 After install from npm or a local package link, use the binary directly:
@@ -89,7 +89,7 @@ A real CLI smoke with checked-in fixtures:
 
 ```bash
 npm run build
-node dist/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none
+node dist/src/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none
 ```
 
 ## Project docs

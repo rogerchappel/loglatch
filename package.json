@@ -4,11 +4,11 @@
   "description": "Local-first log triage CLI that redacts secrets, clusters failures, and writes deterministic reports.",
   "type": "module",
   "bin": {
-    "loglatch": "./dist/cli.js"
+    "loglatch": "./dist/src/cli.js"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/src/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/src/index.js"
   },
   "files": [
     "dist",

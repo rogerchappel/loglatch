@@ -11,7 +11,7 @@
     "build": "npm run build",
     "smoke": "npm run smoke",
     "validate": "bash scripts/validate.sh",
-    "realCliSmoke": "node dist/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none"
+    "realCliSmoke": "node dist/src/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none"
   },
   "qualityGates": [
     "TypeScript strict check passes",

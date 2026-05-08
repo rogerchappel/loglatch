@@ -9,5 +9,5 @@ Run:
 
 ```bash
 npm run build
-node dist/cli.js scan examples/*.log examples/*.jsonl --json --fail-on none
+node dist/src/cli.js scan examples/*.log examples/*.jsonl --json --fail-on none
 ```

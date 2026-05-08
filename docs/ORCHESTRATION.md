@@ -33,8 +33,8 @@ npm run release:check
 
 ```bash
 npm run build
-node dist/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none
-node dist/cli.js scan examples/*.log examples/*.jsonl --json --fail-on fatal
+node dist/src/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none
+node dist/src/cli.js scan examples/*.log examples/*.jsonl --json --fail-on fatal
 ```
 
 The second command should exit non-zero because the fixture contains a fatal line. That is expected and useful for CI quality gates.

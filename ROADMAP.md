@@ -6,21 +6,21 @@ contributors, and implementation constraints.
 
 ## Now
 
-- Define the smallest useful project scope.
+- Stabilize the `scan` command around local files, redaction, clustering, Markdown, and JSON.
 - Keep repository setup, documentation, and verification easy for contributors
   to follow.
-- Ship small, reviewable improvements.
+- Dogfood against agent build logs using synthetic fixtures only.
 
 ## Next
 
-- Add the next capabilities that directly support the project's primary users.
+- Add SARIF or GitHub Step Summary renderers if CI users ask for them.
+- Add configurable redaction patterns while keeping safe defaults.
 - Improve tests, docs, and examples around the most used workflows.
-- Reduce setup friction discovered during early use.
 
 ## Later
 
-- Consider larger features after the core workflow is stable.
-- Add automation only where it removes repeated maintainer work.
+- Add optional framework-aware recognizers for common test runners.
+- Consider richer bucket fingerprints after the heuristic core is stable.
 - Revisit packaging, deployment, or integration options based on real demand.
 
 ## Not Planned

@@ -1,0 +1,4 @@
+{"time":"2026-05-08T08:05:00Z","level":"info","message":"agent started local check"}
+{"time":"2026-05-08T08:05:01Z","level":"warning","message":"tool output truncated after 50000 chars"}
+{"time":"2026-05-08T08:05:02Z","level":"error","message":"build failed with exit code 2 on package loglatch"}
+{"time":"2026-05-08T08:05:03Z","level":"error","message":"build failed with exit code 1 on package loglatch"}

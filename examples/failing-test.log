@@ -1,0 +1,5 @@
+2026-05-08T08:02:10Z info starting npm test
+2026-05-08T08:02:11Z warn retrying flaky fixture load attempt=1
+2026-05-08T08:02:12Z error Test failed: should redact api key before rendering expected=true actual=false api_key=sk_live_abc1234567890
+2026-05-08T08:02:13Z error Test failed: should redact api key before rendering expected=true actual=false api_key=sk_live_abc1234567890
+2026-05-08T08:02:14Z fatal Uncaught exception in tests/redact.test.ts:42 password=hunter2secret

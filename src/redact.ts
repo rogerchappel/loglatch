@@ -52,9 +52,9 @@ export function redactText(input: string): RedactionResult {
   let count = 0;
 
   for (const secret of patterns) {
-    text = text.replace(secret.pattern, (...args: string[]) => {
+    text = text.replace(secret.pattern, (match: string, ...args: string[]) => {
       count += 1;
-      return secret.replace(...args);
+      return secret.replace(match, ...args);
     });
   }
 

@@ -1,0 +1,31 @@
+{
+  "project": "loglatch",
+  "repository": "rogerchappel/loglatch",
+  "runtime": "node>=20",
+  "packageManager": "npm",
+  "networkPolicy": "no runtime network calls",
+  "commands": {
+    "install": "npm install",
+    "check": "npm run check",
+    "test": "npm test",
+    "build": "npm run build",
+    "smoke": "npm run smoke",
+    "validate": "bash scripts/validate.sh",
+    "realCliSmoke": "node dist/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.md --fail-on none"
+  },
+  "qualityGates": [
+    "TypeScript strict check passes",
+    "Node test suite passes",
+    "Fixture smoke renders Markdown and JSON",
+    "Fatal threshold exits non-zero",
+    "Redaction removes checked-in fake secrets"
+  ],
+  "artifacts": [
+    "docs/PRD.md",
+    "docs/TASKS.md",
+    "docs/ORCHESTRATION.md",
+    "docs/orchestration.json",
+    "examples/failing-test.log",
+    "examples/agent-run.jsonl"
+  ]
+}

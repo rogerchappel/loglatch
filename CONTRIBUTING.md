@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve `../loglatch`.
+Thanks for helping improve LogLatch.
 
 This project values small, reviewable contributions with clear verification.
 
@@ -9,7 +9,7 @@ This project values small, reviewable contributions with clear verification.
 Before opening an issue:
 
 - Search existing issues.
-- Confirm the issue applies to `../loglatch`.
+- Confirm the issue applies to LogLatch.
 - Include enough context for maintainers to understand or reproduce the request.
 
 Bug reports should include:
@@ -26,6 +26,10 @@ Feature requests should include:
 - Why the current project does not solve it.
 - Risks or compatibility concerns.
 - Suggested files or behavior that may need to change.
+
+## Fixture rule
+
+Use synthetic fixtures. If a parser bug came from a real log, shrink it down and replace names, tokens, hostnames, and customer-specific details before committing.
 
 ## Pull Requests
 

@@ -98,6 +98,10 @@ node dist/src/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.m
 - [Tasks](docs/TASKS.md)
 - [Orchestration](docs/ORCHESTRATION.md)
 - [Machine-readable orchestration](docs/orchestration.json)
+- [Examples](docs/EXAMPLES.md)
+- [Output contract](docs/OUTPUTS.md)
+- [Redaction notes](docs/REDACTION.md)
+- [Local-first contract](docs/LOCAL_FIRST.md)
 
 ## Limitations
 

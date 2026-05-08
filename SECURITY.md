@@ -15,6 +15,12 @@ Example:
 
 If the project does not publish versioned releases yet, say that clearly.
 
+## Runtime security posture
+
+LogLatch runs locally and does not send logs to remote services. Redaction is enabled by default, but users should still review generated reports before sharing them outside a trusted environment.
+
+Please do not commit real production logs or credentials as repro cases. Reduce issues to synthetic fixtures whenever possible.
+
 ## Reporting a Vulnerability
 
 Please do not report suspected vulnerabilities in public issues, pull requests, or discussions.

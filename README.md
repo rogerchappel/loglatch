@@ -62,6 +62,10 @@ loglatch scan examples/*.log examples/*.jsonl --json --fail-on fatal
 loglatch scan "logs/**/*.log" --fail-on warn
 ```
 
+For a complete fixture-backed walkthrough, see
+[examples/ci-triage-demo.md](examples/ci-triage-demo.md). A short video and
+social brief lives in [docs/promo/video-brief.md](docs/promo/video-brief.md).
+
 ## Safety model
 
 LogLatch is built for private local evidence:

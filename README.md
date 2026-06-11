@@ -114,6 +114,13 @@ node dist/src/cli.js scan examples/failing-test.log --out /tmp/loglatch-triage.m
 - Markdown/JSON are the only V1 output formats.
 - `generatedAt` is fixed for deterministic local outputs in this MVP.
 
+## Package contents
+
+The npm package allowlist includes the runtime files plus the public support
+documents needed for release review: `README.md`, `LICENSE`, `SECURITY.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
+Run `npm run package:smoke` or `npm pack --dry-run` before publishing to
+confirm those files are still present in the tarball.
+
 ## Contributing
 
 Small, fixture-backed patches are very welcome. Please keep the local-first contract intact: no telemetry, no hidden uploads, no checked-in real logs, and no surprise writes outside explicit outputs.
